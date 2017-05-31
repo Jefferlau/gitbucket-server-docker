@@ -56,3 +56,11 @@ docker run -p 18080:8080 --name jefferlau-gitbucket -v $PWD/4.13:/root/.gitbucke
 - 端口任意定制
 - $PWD 指代当前目录，即将宿主机当前目录下的文件夹4.13挂载到 Docker 容器的 /root/.gitbucket 目录
 - Go to http://[hostname]:18080/ and log in with ID: root / Pass: root.
+
+Docker-Compose
+
+编辑你的 docker-compose.yml 文件，然后使用 ``docker-compose`` 运行这个容器：
+
+```bash
+$ docker-compose up -d
+```
