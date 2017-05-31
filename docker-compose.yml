@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  gitbucket-server:
+    image: jefferlau/gitbucket-server
+    build: .
+    restart: always
+    container_name: jefferlau-gitbucket
+    ports:
+      - "18080:8080"
+    volumes:
+      - ~/gitbucket-server/4.13:/root/.gitbucket
